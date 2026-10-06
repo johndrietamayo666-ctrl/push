@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Training Enrollment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Campus Training Enrollment</h1>
+
+    <form id="enrollmentForm" novalidate>
+      <div class="field">
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text">
+        <small id="fullNameError" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="studentNumber">Student Number</label>
+        <input id="studentNumber" name="studentNumber" type="text" placeholder="25-5678-456">
+        <small id="studentNumberError" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email">
+        <small id="emailError" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="trainingCourse">Training Course</label>
+        <select id="trainingCourse" name="trainingCourse">
+          <option value="">Select a course</option>
+          <option value="networking">Basic Networking</option>
+          <option value="webdesign">Web Design</option>
+          <option value="database">Database Fundamentals</option>
+        </select>
+        <small id="trainingCourseError" class="error"></small>
+      </div>
+
+      <fieldset class="field">
+        <legend>Enrollment Category</legend>
+        <label id="regularCategory"><input id="regular" type="radio" name="enrollmentCategory" value="regular"> Regular</label>
+        <label id="earlyCategory"><input id="early" type="radio" name="enrollmentCategory" value="early"> Early Registrant</label>
+        <small id="enrollmentCategoryError" class="error"></small>
+      </fieldset>
+
+      <div class="payment-box">
+        <p>Course Fee: <strong id="courseFee">₱0</strong></p>
+        <p>Discount: <strong id="discountAmount">₱0</strong></p>
+        <p>Final Payment: <strong id="finalPayment">₱0</strong></p>
+      </div>
+
+      <div class="field agreement">
+        <label><input id="agreement" name="agreement" type="checkbox"> I accept the enrollment agreement.</label>
+        <small id="agreementError" class="error"></small>
+      </div>
+
+      <div class="actions">
+        <button id="enrollBtn" type="submit">Enroll</button>
+        <button id="clearBtn" type="button">Clear</button>
+      </div>
+    </form>
+
+    <section id="resultSection" class="result" hidden>
+      <h2 id="resultHeading"></h2>
+      <div id="resultDetails"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

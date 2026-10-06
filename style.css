@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #1f2937; }
+.container { width: min(760px, calc(100% - 32px)); margin: 32px auto; background: #fff; padding: 24px; border: 1px solid #d8dee8; border-radius: 10px; }
+h1 { margin-top: 0; }
+.field { margin-bottom: 16px; }
+.field > label, legend { font-weight: 700; display: block; margin-bottom: 6px; }
+input[type="text"], input[type="email"], select { width: 100%; padding: 10px; border: 1px solid #aeb8c5; border-radius: 6px; }
+fieldset { border: 1px solid #d8dee8; border-radius: 6px; padding: 12px; }
+fieldset label { margin-right: 18px; }
+.error { display: block; min-height: 18px; margin-top: 4px; color: #9b1c1c; }
+.payment-box { background: #f0f4f8; padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; }
+.payment-box p { margin: 6px 0; }
+.actions { display: flex; gap: 10px; }
+button { padding: 10px 18px; border: 0; border-radius: 6px; cursor: pointer; }
+#enrollBtn { background: #1f4e79; color: white; }
+#clearBtn { background: #dfe5ec; color: #111827; }
+.result { margin-top: 22px; padding: 16px; border: 1px solid #9fb7cc; border-radius: 8px; background: #f7fbff; }
+.result p { margin: 6px 0; }
